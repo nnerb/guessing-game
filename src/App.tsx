@@ -53,9 +53,9 @@ function App() {
       <Header/>
       <div className='mx-auto max-w-[365px] mt-[-155px]'>
       <div className='flex flex-col items-center mx-2 relative'>
-        <h1 className='title text-[1.50rem] mb-4 font-bold text-center text-white'>Guess the Color (<a href='https://marketing.istockphoto.com/blog/hex-colors-guide/' rel='noopener' target="_blank" className='link hover:underline hover:text-blue-500 decoration-blue-500'>HEX</a> Edition)</h1>
+        <h1 className='title text-[1.50rem] mb-4 font-black text-center text-white'>Guess the Color (<a href='https://marketing.istockphoto.com/blog/hex-colors-guide/' rel='noopener' target="_blank" className='link hover:underline hover:text-blue-500 decoration-blue-500'>HEX</a> Edition)</h1>
         <div className='h-[200px] mb-8 w-full' style={styles}></div>
-        <div className='flex gap-5 mb-4 w-full flex-col sm:flex-row'>
+        <div className='flex justify-between gap-5 sm:gap-0 mb-4 w-full flex-col sm:flex-row'>
           {answers.map(answer => (
           <button type='button' key={answer}
           onClick={()=>handleAnswerClicked(answer)}

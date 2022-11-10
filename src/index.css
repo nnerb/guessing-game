@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Century gothic";
+  src: url('/fonts/CenturyGothic.ttf');
 }
+/* Default */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Century gothic';
+}
+
 html,body{
   height: 100vh;
 }
